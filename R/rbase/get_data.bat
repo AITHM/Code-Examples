@@ -1,0 +1,1 @@
+curl --output iris.csv https://raw.githubusercontent.com/Sketchjar/MachineLearningHD/main/iris.csv
