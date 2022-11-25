@@ -5,9 +5,11 @@ name: Python application
 
 on:
   push:
-    branches: [ "main" ]
+    paths: 
+      - 'python/conda/**'
   pull_request:
-    branches: [ "main" ]
+    paths: 
+       - 'python/conda/**'
 
 permissions:
   contents: read
