@@ -33,12 +33,13 @@ jobs:
         with:
           r-version: ${{ matrix.r-version }}
       - name: Install dependencies
-        working-directory: ./R/rbase
+        
         run: |
           install.packages(c("rstan", "car", "remotes"))
           remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
       - name: run_scropt
+        working-directory: ./R/rbase
         run: |
-          source("R/rbase/main.R")
+          source("main.R")
         shell: Rscript {0} 
