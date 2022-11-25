@@ -6,10 +6,10 @@ name: Python application
 on:
   push:
     paths: 
-      - python/pip*
+      - 'python/pip/**'
   pull_request:
     paths: 
-       - python/pip*
+       - 'python/pip/**'
 
 permissions:
   contents: read
