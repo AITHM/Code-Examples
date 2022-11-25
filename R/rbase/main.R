@@ -31,3 +31,4 @@ fit1 <- stan(
   refresh = 0             
 )
 print(fit1, pars=c("x_beta"), probs=c(.1,.5,.9))
+print()
