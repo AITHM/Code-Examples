@@ -33,6 +33,7 @@ jobs:
         with:
           r-version: ${{ matrix.r-version }}
       - name: Install dependencies
+        working-directory: ./R/rbase
         run: |
           install.packages(c("rstan", "car", "remotes"))
           remotes::install_deps(dependencies = TRUE)
