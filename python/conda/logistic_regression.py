@@ -6,6 +6,7 @@ def run_logistic_regression_iris():
     data = pd.read_csv("iris.csv")
     x = data.loc[:,"SepalLengthCm":"PetalWidthCm"]
     y = data.loc[:,"Species"]
+    z = data.loc[:,"Species"]
 
     le = preprocessing.LabelEncoder()
     le.fit(y)
